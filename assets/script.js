@@ -1,8 +1,5 @@
 let quoteBox = document.getElementById("quoteBox");
 
-//quoteBox.addEventListener("input", function() {
-  //console.log(quoteBox.value);
-//});
 var getQuote = function(title) {
     //var for title?
     //var title
@@ -18,7 +15,7 @@ var getQuote = function(title) {
           .then((response) => response.json())
           .then((quote) => {
             info = quote
-            console.log(quote)
+            //console.log(quote)
             console.log(info)
 
             //get div where the quote is going
@@ -29,8 +26,21 @@ var getQuote = function(title) {
                 <p>Character: ${info.character}</p>
                 <p>Quote: ${info.quote}</p>
                 `
-          });
-          
+          });       
 }
 
-getQuote("naruto")
+
+//add other api function here? I think it goes here or after what is below
+
+
+
+
+window.onload = function() {
+    var quoteButton = document.getElementById("quoteButton");
+  
+    quoteButton.addEventListener("click", function() {
+      getQuote("attack on titan");
+    });
+  };
+
+//getQuote(" ") //needs input term. This should come from the other api function (as a return? maybe idk? need more work to be done in other areas to be able to determine how to proceed)
