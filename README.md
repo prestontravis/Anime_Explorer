@@ -15,5 +15,3 @@ https://jikan.moe/
 Anime quotes using Anime-chan　アニメーちゃん (https://animechan.vercel.app/docs)  
 When you click on the image it’ll show a random quote from the anime  
 
-
-# Project_1
