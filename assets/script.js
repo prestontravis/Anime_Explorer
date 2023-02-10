@@ -40,26 +40,39 @@ var getQuote = function(title) {
 //add other api function here? I think it goes here or after what is below
 
 var getAnime = function() {
-    fetch('https://api.jikan.moe/v4/top/anime?limit=3&order_by=title')
+    fetch('https://api.jikan.moe/v4/top/anime?limit=2&order_by=title')
         .then(response => response.json())
         .then(data => {
             for (i=0; i < data.data.length; i++) {
-                console.log(data);
+                // Test section //
+                //console.log(data);
                 console.log("=============================================================");
                 console.log(data.data[i].title);
-                console.log(data.data[i].url);
-                console.log(data.data[i].images.jpg.image_url);
-                console.log(data.data[i].trailer.images.image_url);
-                console.log(data.data[i].trailer.embed_url);
-                console.log(data.data[i].mal_id)
+                //console.log(data.data[i].url);
+                //console.log(data.data[i].images.jpg.image_url);
+                //console.log(data.data[i].trailer.images.image_url);
+                //console.log(data.data[i].trailer.embed_url);
+                //console.log(data.data[i].mal_id)
                 console.log("=============================================================");
-
-                var quoteButton = document.getElementById("quoteButton")
+                
+                var idName = "animeInfo" + i //var to iterate through all animeInfo e.g. 1st loop = "animeInfo0", 2nd loop = "animeInfo1", etc...
+                console.log(idName)
+                var animeInfo = document.getElementById(idName) //var to add anime info
+                animeInfo.innerHTML = ` 
+                <p>Title: ${data.data[i].title}</p>
+                <p>URL: <a href="${data.data[i].url}" target="_blank">${data.data[i].url}</a></p>
+                <p>Trailer: ${data.data[i].trailer.embed_url}</p>
+                `
+                //!DANGER! DO NOT IMPLEMENT YET　！危ない！　けっしてください
+                //NOTE: the below code needs to go above where the Trailer section is, HOWEVER while it DOES WORK, it brings back HUNDREDS of errors
+                //<iframe src="${data.data[i].trailer.embed_url}" frameborder="0"</iframe>
+                
+                var quoteName = "quoteButton" + i //var to iterate through all quoteButtons e.g. 1st loop = "quoteButton0", 2nd loop = "quoteButton1", etc...
+                var quoteButton = document.getElementById(quoteName)
                 animeImage = data.data[i].images.jpg.image_url
-                console.log(typeof animeImage)
                 quoteButton.src = animeImage;
                 
-                getQuote(data.data[i].title)
+                //getQuote(data.data[i].title)  //This needs to be put back in AFTER testing is finished. This is the call to get the quote.
             }
         })
 }
