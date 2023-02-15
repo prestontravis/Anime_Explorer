@@ -1,0 +1,14 @@
+.favorited {
+    background-color: rgb(253, 0, 0);
+}
+
+#thumb {
+    pointer-events: none;
+}
+
+
+
+nav ul ul li a:focus,
+nav ul ul li a:active {
+    color: var(--link-active-color);
+}
