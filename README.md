@@ -1,3 +1,5 @@
+# Anime Explorer
+
 ## Description:
 
 A website which provides a list of anime then offers information about it and a quote from one of the characters.
@@ -23,6 +25,10 @@ html
 css
 bulma
 javascript
+
+## Screenshot
+![Screenshot 2023-02-16 at 5 49 59 PM](https://user-images.githubusercontent.com/119766277/219506330-27f97d6f-1233-4c46-aca9-8c06c82fc957.png)
+
 
 ## Link to Application
 https://trayprey.github.io/Anime_Explorer/
