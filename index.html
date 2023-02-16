@@ -4,167 +4,376 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Top Anime</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles.css">
     <script src="./assets/script.js"></script>
 </head>
 <body>
-    <header>
-        <h1>The Top Anime Ever</h1>
-    </header>
-    <div>
-        <button type="flipButton" id="flipButton0">
-            <img id="quoteButton0" src="./assets/images/ytbheadeer.jpg" alt="Get Quote">
-        </button>
+       
+  <nav class="navbar" role="navigation" aria-label="main navigation" style="background-color:#cbe7ff;">
+    <div class="navbar-brand">
+        <a class="navbar-item">
+            <img src="./assets/images/anime-logo.jpg" alt="Otaku Haven" style="max-width: 100%; max-height: 100%;" >
+            <h1 class="title is-2" style="margin-left:10px;">ANIME</h1>
+        </a>
     </div>
-    <div id="animeInfo0">
+
+   
+</nav>
+  
+  
+
+
+
+            
+  <div class="columns">
+    <div class="column is-half">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <figure class="image">
+              <img id="quoteButton0" src="./assets/images/ytbheadeer.jpg" alt="Get Quote">
+            </figure>
+          </div>
+          <div class="flip-card-back" id="quoteBox">
+            <p class="title is-3 has-text-black">
+              <div id="animeInfo0"></div>
+            </p>
+            <br>
+            <div id="quoteBox0">
+              <br>
+          </div>
+          <div id="likeBox">
+            <button type="button" class="favButton" id="likeButton0">
+            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+          </button>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+      
     </div>
-    <div id="quoteBox0">
+ 
+  
+  
+  
+      
+
+
+
+
+<div class="column">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      
+                      
+                      
+                      
+                      <figure class="image">
+            <img id="quoteButton1" src="./assets/images/yot1.jpg" alt="Get Quote">
+                      </figure>
+        </div>
+        <div class="flip-card-back" id="quoteBox">
+            <p class="title is-3 has-text-black">
+                <div id="animeInfo1"></div>
+            </p>
+            <br>
+            <div id="quoteBox1">
+              <br>
+          </div>
+          <div id="likeBox">
+            <button type="button" class="favButton" id="likeButton1">
+              <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="columns">
+    <div class="column is-half">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                
+                
+                
+                
+                <figure class="image">
+      <img id="quoteButton2" src="./assets/images/yot2.jpg" alt="Get Quote">
+                </figure>
+  </div>
+  <div class="flip-card-back" id="quoteBox">
+      <p class="title is-3 has-text-black">
+          <div id="animeInfo2"></div>
+      </p>
+      <br>
+      <div id="quoteBox2">
         <br>
     </div>
     <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton0">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
+      <button type="button" class="favButton" id="likeButton2">
+        <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+      </button>
     </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+        
+
+
+
+<div class="column">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              
+              
+              
+              
+              <figure class="image">
+    <img id="quoteButton3" src="./assets/images/yot3.jpg" alt="Get Quote">
+              </figure>
+</div>
+<div class="flip-card-back" id="quoteBox">
+    <p class="title is-3 has-text-black">
+        <div id="animeInfo3"></div>
+    </p>
     <br>
-    <br>
-    <div>
-        <img id="quoteButton1" src="./assets/images/yot1.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo1">
-    </div>
-    <div id="quoteBox1">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton1">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
-    <br>
-    <br>
-    <div>
-        <img id="quoteButton2" src="./assets/images/yot2.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo2">
-    </div>
-    <div id="quoteBox2">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton2">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
-    <br>
-    <br>
-    <div>
-        <img id="quoteButton3" src="./assets/images/yot3.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo3">
-    </div>
     <div id="quoteBox3">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton3">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
+      <br>
+  </div>
+  <div id="likeBox">
+    <button type="button" class="favButton" id="likeButton3">
+      <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+    </button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="columns">
+<div class="column is-half">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            
+            
+            
+            
+            <figure class="image">
+  <img id="quoteButton4" src="./assets/images/yotsu3.jpg" alt="Get Quote">
+            </figure>
+</div>
+<div class="flip-card-back" id="quoteBox">
+  <p class="title is-3 has-text-black">
+      <div id="animeInfo4"></div>
+  </p>
+  <br>
+  <div id="quoteBox4">
     <br>
+</div>
+<div id="likeBox">
+  <button type="button" class="favButton" id="likeButton4">
+    <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+  </button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            
+            
+            
+            
+            <figure class="image">
+  <img id="quoteButton5" src="./assets/images/yot5.jpg" alt="Get Quote">
+            </figure>
+</div>
+<div class="flip-card-back" id="quoteBox">
+  <p class="title is-3 has-text-black">
+      <div id="animeInfo5"></div>
+  </p>
+  <br>
+  <div id="quoteBox5">
     <br>
-    <div>
-        <img id="quoteButton4" src="./assets/images/9781413903454-us.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo4">
-    </div>
-    <div id="quoteBox4">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton4">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
+</div>
+<div id="likeBox">
+  <button type="button" class="favButton" id="likeButton5">
+    <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="columns">
+<div class="column is-half">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            
+            
+            
+            
+            <figure class="image">
+  <img id="quoteButton6" src="./assets/images/yot 6.jpg" alt="Get Quote">
+            </figure>
+</div>
+<div class="flip-card-back" id="quoteBox">
+  <p class="title is-3 has-text-black">
+      <div id="animeInfo6"></div>
+  </p>
+  <br>
+  <div id="quoteBox6">
     <br>
+</div>
+<div id="likeBox">
+  <button type="button" class="favButton" id="likeButton6">
+    <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+  </button>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            
+            
+            
+            
+            <figure class="image">
+  <img id="quoteButton7" src="./assets/images/yot7.jpg" alt="Get Quote">
+            </figure>
+</div>
+<div class="flip-card-back" id="quoteBox">
+  <p class="title is-3 has-text-black">
+      <div id="animeInfo7"></div>
+  </p>
+  <br>
+  <div id="quoteBox7">
     <br>
-    <div>
-        <img id="quoteButton5" src="./assets/images/yot5.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo5">
-    </div>
-    <div id="quoteBox5">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton5">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
+</div>
+<div id="likeBox">
+  <button type="button" class="favButton" id="likeButton7">
+    <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="columns">
+<div class="column is-half">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            
+            
+            
+            
+            <figure class="image">
+  <img id="quoteButton8" src="./assets/images/yot8.jpg" alt="Get Quote">
+            </figure>
+</div>
+<div class="flip-card-back" id="quoteBox">
+  <p class="title is-3 has-text-black">
+      <div id="animeInfo8"></div>
+  </p>
+  <br>
+  <div id="quoteBox8">
     <br>
+</div>
+<div id="likeBox">
+  <button type="button" class="favButton" id="likeButton8">
+    <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+  </button>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<div class="column">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            
+            
+            
+            
+            <figure class="image">
+  <img id="quoteButton9" src="./assets/images/yot9.jpg" alt="Get Quote">
+            </figure>
+</div>
+<div class="flip-card-back" id="quoteBox">
+  <p class="title is-3 has-text-black">
+      <div id="animeInfo9"></div>
+  </p>
+  <br>
+  <div id="quoteBox9">
     <br>
-    <div>
-        <img id="quoteButton6" src="./assets/images/yot 6.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo6">
-    </div>
-    <div id="quoteBox6">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton6">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
-    <br>
-    <br>
-    <div>
-        <img id="quoteButton7" src="./assets/images/yot7.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo7">
-    </div>
-    <div id="quoteBox7">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton7">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
-    <br>
-    <br>
-    <div>
-        <img id="quoteButton8" src="./assets/images/yot8.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo8">
-    </div>
-    <div id="quoteBox8">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton8">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
-    <br>
-    <br>
-    <div>
-        <img id="quoteButton9" src="./assets/images/yot9.jpg" alt="Get Quote">
-    </div>
-    <div id="animeInfo9">
-    </div>
-    <div id="quoteBox9">
-        <br>
-    </div>
-    <div id="likeBox">
-        <button type="button" class="favButton" id="likeButton9">
-            <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
-        </button>
-    </div>
-    <br>
-    <br>
+</div>
+<div id="likeBox">
+  <button type="button" class="favButton" id="likeButton9">
+    <img id="thumb" src="assets/images/thumbMiniT.png" alt="Thumb for Fav">
+  </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+          
 </body>
-
-
 </html>
