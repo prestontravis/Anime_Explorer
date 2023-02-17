@@ -1,6 +1,3 @@
-//var quoteBox = document.getElementById("quoteBox");
-//var quoteButton = document.getElementById("quotebutton")
-// Not sure why, but the code doesn't like using the global variables above??  Works fine as temp var inside function blocks
 
 var getQuote = function(title, num) {
     var animeName = title     //var for anime title/name
@@ -66,7 +63,7 @@ var getAnime = function() {
               animeImage = data.data[i].images.jpg.image_url
               quoteButton.src = animeImage;
               
-              //getQuote(data.data[i].title, i)  //This needs to be put back in AFTER testing is finished. This is the call to get the quote.
+              getQuote(data.data[i].title, i)  //This needs to be put back in AFTER testing is finished. This is the call to get the quote.
             }
         })
 }
@@ -138,15 +135,6 @@ window.addEventListener('load', function() {
     favs[i].addEventListener('click', favClick);
   }
 
-
-
-///////////Start Here for flip button  NOT FINISHED
-
-
-  //var flip = document.querySelectorAll('.flipButton')
-  //console.log(flip)
-  //flipButtonID = flip.getAttribute('id')
-  //console.log(flipButtonID)
   getAnime()
 });
 
