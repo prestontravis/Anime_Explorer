@@ -31,4 +31,4 @@ javascript
 
 
 ## Link to Application
-https://trayprey.github.io/Anime_Explorer/
+https://prestontravis.github.io/Anime_Explorer/
